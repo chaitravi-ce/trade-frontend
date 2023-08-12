@@ -1,0 +1,7 @@
+<p>user-details works!</p>
+<div *ngFor="let trade of this.trades; let i = index">
+    <p>Trade {{ i + 1 }}</p>
+    <p>Symbol: {{ trade.stockTicker }}</p>
+    <p>Quantity: {{ trade.volume }}</p>
+    <p>Price: {{ trade.stockPrice }}</p>
+  </div>
