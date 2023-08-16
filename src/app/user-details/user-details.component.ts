@@ -19,7 +19,7 @@ export class UserDetailsComponent implements OnInit {
   }
 
   loadTrades(): void {
-    this.apiService.getTrades().subscribe({
+    this.apiService.getAllTrades().subscribe({
       next: (trades: Trade[]) => {
         this.trades = trades,
         console.log(this.trades)

@@ -1,0 +1,44 @@
+<div class="trade-list-container">
+    <h2>Trade List</h2>
+    
+    <!-- Trade Table -->
+    <table class="trade-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Type</th>
+          <th>Date</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let trade of trades">
+          <td>{{ trade.id }}</td>
+          <td>{{ trade.stockTicker }}</td>
+          <td>{{ trade.stockPrice }}</td>
+          <td>{{ trade.volume | currency }}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <!-- Add Trade Form -->
+    <div class="add-trade-form">
+      <h3>Add New Trade</h3>
+      <form #tradeForm="ngForm">
+        <div>
+          <label for="type">Type:</label>
+          <input type="text" id="type" name="type" ngModel required>
+        </div>
+        <div>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" ngModel required>
+        </div>
+        <div>
+          <label for="value">Value:</label>
+          <input type="number" id="value" name="value" ngModel required>
+        </div>
+        <button type="submit">Add Trade</button>
+      </form>
+    </div>
+  </div>
+  

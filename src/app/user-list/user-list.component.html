@@ -1,0 +1,10 @@
+<div class="user-list-container">
+    <h2>User List</h2>
+    <div *ngFor="let user of users" class="user-card">
+        <div class="user-info">
+            <h3>{{ user.name }}</h3>
+            <p>Username: {{ user.username }}</p>
+        </div>
+        <button (click)="navigateToUserProfile(user.id)" class="view-profile-btn">View Profile</button>
+    </div>
+</div>

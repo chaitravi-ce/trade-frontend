@@ -1,0 +1,51 @@
+.trade-list-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.trade-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.trade-table th,
+.trade-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.add-trade-form {
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.add-trade-form h3 {
+    margin-bottom: 10px;
+}
+
+.add-trade-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.add-trade-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.add-trade-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.add-trade-form button:hover {
+    background-color: #0056b3;
+}
